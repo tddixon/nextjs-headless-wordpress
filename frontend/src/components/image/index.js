@@ -32,7 +32,8 @@ const Image = ( props ) => {
 			alt: altText || title,
 			src: sourceUrl || ( showDefault ? DEFAULT_IMG_URL : '' ),
 			layout: 'fill',
-      className: cx( 'object-cover', className ),
+			objectFit: 'cover',
+			className,
 			...rest
 		};
 
